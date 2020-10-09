@@ -1,0 +1,17 @@
+
+/************** Background of options *********************/
+
+#tempDiv div{
+
+background-image: url(../img/bred.png);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 100px 100px;
+padding: 3rem 3rem;
+font-size: 3rem;
+color: WHITE;
+
+
+position: absolute;
+}
+

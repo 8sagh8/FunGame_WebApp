@@ -1,0 +1,9 @@
+.temDivPara{
+  position: absolute;
+  box-sizing: border-box;
+  transition: 0.1s;
+  transform: translate(-100%, -100%);
+  pointer-events: none;
+  z-index:1000;
+  font-size:2rem;
+}

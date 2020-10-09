@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Enter Name to Play Game</title>
+    <link href="../css/infostyle.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="centraldiv">
+      <header>
+        <span>
+          <a href="index.html"> Angry Birds Math Game</a>
+          <h4>Information Page</h4>
+        </span>  
+        <span id="butClick"><i class="fas fa-volume-up fa-2x" id="volSpan"><audio id="myAudio">
+        <source src="../audio/music.mp3" type="audio/mpeg"></audio></i>
+      </header>
+      
+      <main id="main">
+          <div id = "infodiv">
+            <form>
+              <div id="name">
+                <label>Name</label>
+               <!--   <input type="text" id="textfield" placeholder="  Input Your Name!">
+               -->
+
+                <select id="textfield">
+                  <option value="error">Select Name</option>
+                  <option value="Sammar">Sammar</option>
+                  <option value="Zainab">Zainab</option>
+                  <option value="Sakina">Sakina</option>
+                  <option value="Hassan">Hassan</option>
+                  <option value="Guest">Guest</option>
+                </select>
+              </div>
+              
+              <div id="age">
+                <label>Age</label>
+                <select id="agefield">
+                  <option value="error">Select Age</option>
+                  <option value=7>02</option>
+                  <option value=8>03</option>
+                  <option value=9>04</option>
+                  <option value=10>05</option>
+                  <option value=11>06</option>
+                  <option value=12>07</option>
+                </select>
+              </div>
+            </form>
+            
+            <div id="botton">              
+              <input type="button" value="Click To Play" id="press">
+            </div> 
+          </div>
+
+          <div id="playdiv">
+            <img src ="../img/Angrybirds.png" id = "angrybirds">
+          </div>
+      </main>
+    </div>
+    <script src="../js/infoscript.js"></script>
+    <script src="../js/report.js"></script>
+  </body>
+</html>
