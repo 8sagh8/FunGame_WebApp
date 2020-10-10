@@ -100,8 +100,8 @@ fourOption.addEventListener("click", randomQuestionNumbers);
 
 /************Click Calculation***************/
 let iClick = 0;
-let totalMiss = 0;
-let totalHits = 0;
+let totalMiss = localStorage.fullMisses;
+let totalHits = localStorage.fullHits;
 
 /************Hits Calculation***************/
 

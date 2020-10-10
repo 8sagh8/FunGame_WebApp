@@ -1,3 +1,7 @@
+prompt("Name: " + localStorage.fullName + " Age: " + localStorage.fullAge);
+prompt("Scores: " + localStorage.fullScore + " Hits: " + localStorage.fullHits + " Misses: " +
+    localStorage.fullMisses);
+
 /************* Time logic********************* */
 const spantime = document.querySelector("#ttime");
 
@@ -105,8 +109,8 @@ fourOption.addEventListener("click", randomQuestionNumbers);
 
 /************Click Calculation***************/
 let iClick = 0;
-let totalMiss = 0;
-let totalHits = 0;
+let totalMiss = localStorage.fullMisses;
+let totalHits = localStorage.fullHits;
 
 /************Hits Calculation***************/
 
