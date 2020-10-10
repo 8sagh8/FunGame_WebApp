@@ -21,36 +21,35 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
   </head>
   <body>
-      <main id="main"> 
-        <div id = "mainpage">
+    <div id = "mainpage" class="row">
 
-          <div id="gamediv">
-            <div id="tempDiv">
-              <p class = "temDivPara">
-                  <span id="valueOne"></span>&nbsp;+&nbsp;
-                  <span id="valueTwo"></span>&nbsp;=&nbsp;??
-              </p>
+      <div id="gamediv" class="col-sm-10">
+        <div id="tempDiv">
+          <p class = "temDivPara">
+              <span id="valueOne"></span>&nbsp;+&nbsp;
+              <span id="valueTwo"></span>&nbsp;=&nbsp;??
+          </p>
 
-              
-              <div id="optionOne"></div>  
-              <div id="optionTwo"></div>
-              <div id="optionThree"></div>
-              <div id="optionFour"></div>
+          
+          <div id="optionOne"></div>  
+          <div id="optionTwo"></div>
+          <div id="optionThree"></div>
+          <div id="optionFour"></div>
 
-            </div>
-          </div>
-  
-
-          <div id = "scorediv">
-            <p id="score"> Score: <span id = "scoreSpan">0</span></p>
-            <p id="hit"> Hits: <span id = "hitsSpan"></span> </p>
-            <p id="miss"> Miss: <span id = "missSpan"></span> </p>
-            <p id="spanme"> Time: <span id="ttime">90</span></p>
-          </div>
-        
-        
         </div>
-    </main>
+      </div>
+
+
+      <div id = "scorediv" class="col-sm-2">
+        <p id="score"> Score: <span id = "scoreSpan">0</span></p>
+        <p id="hit"> Hits: <span id = "hitsSpan"></span> </p>
+        <p id="miss"> Miss: <span id = "missSpan"></span> </p>
+        <p id="spanme"> Time: <span id="ttime">90</span></p>
+      </div>
+    
+    
+    </div>
+
     <script src="../js/level1script.js"></script>
     <script src="../js/movem.js"></script>
   </body>

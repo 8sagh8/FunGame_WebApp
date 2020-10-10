@@ -1,16 +1,10 @@
-
-
-#tempDiv div{
-
-background-image: url(../img/byellow.png);
-background-repeat: no-repeat;
-background-position: center center;
-background-size: 100px 100px;
-padding: 3rem 3rem;
-font-size: 3rem;
-color: blue;
-
-
-position: absolute;
+#tempDiv div {
+    background-image: url(../img/blackB.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100px 100px;
+    padding: 3rem 3rem;
+    font-size: 3rem;
+    color: blue;
+    position: absolute;
 }
-

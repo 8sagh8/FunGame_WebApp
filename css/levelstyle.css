@@ -1,173 +1,65 @@
 /*************  CSS RESET  ********************/
-*{
-  padding: 0rem;
-  margin: 0rem;
-}
-#mainpage{
-  padding: 1rem;
-  border: dotted blue;
-  margin: 2rem;
 
-}
-#gamediv{
-  height: 80vh;
-  width: 1250px;
-  border-bottom: dotted blue;
+* {
+    padding: 0rem;
+    margin: 0rem;
 }
 
-#scorediv{
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  height: 30px;
+#mainpage {
+    margin: 15px;
 }
 
- .temDivPara{
-   margin-left : 20rem;
-   margin-right: 20rem;
-   font-size: 36px;
-   text-align:center;
+#gamediv {
+    height: 80vh;
+    width: 82%;
+    border-right: solid green 2px;
+}
 
-  border: dotted #f0fff0;
-  display: inline-block;
-  background-color: #333;
-  color: #fff;
-  border-style: solid;
-  border-color: #555555;
-  padding : 1em 2em 1em 2em;
-  text-decoration: none;
- }
-
+.temDivPara {
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-size: 36px;
+    text-align: center;
+    border: dotted #f0fff0;
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    border-style: solid;
+    border-color: #555555;
+    padding: 1em 2em 1em 2em;
+    text-decoration: none;
+}
 
 
 /************** color of scores, hits, Miss, age *********************/
-#scorediv{
-font-size: 2.5rem;
-font-family: 'Comic Sans MS';
-font-weight: bold;
 
+#scorediv {
+    font-size: 2.5rem;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
 }
+
 
 /******************RESPONSIVE DESIGN*********/
 
-/************* 1200 px**********************/
-@media(max-width:1200px){
-
-  #main{
-    width: 100vh;
-    height: 100vh;
-  }
-  #mainpage{
-  margin: 0.5rem;
-}
-
-  #gamediv{
-    height: 100vh;
-    width: 90vh;
-  }
-}
-
-/************* 1000 px**********************/
-@media(max-width:1000px){
-
-  #gamediv{
-    height: 110vh;
-    width: 90vh;
-  }
-}
-
-/************* 900 px**********************/
-@media(max-width:900px){
-
-  #gamediv{
-    height: 130vh;
-    width: 90vh;
-  }
-}
-
 
 /************* 800 px**********************/
-@media(max-width:800px){
 
-  #gamediv{
-    height: 100vh;
-    width: 60vh;
-  }
-
-    #main{
-    width: 100vh;
-    height: 120vh;
-  }
-
-  .temDivPara{
-    margin-left : 10rem;
-    margin-right: 0rem;
-     padding : 0rem;
-   }
+@media(max-width:800px) {
+    .temDivPara {
+        margin-left: 10rem;
+        margin-right: 0rem;
+        padding: 0rem;
+    }
 }
 
-/************* 700 px**********************/
-@media(max-width:700px){
-
-  #gamediv{
-    height: 120vh;
-    width: 50vh;
-  }
-}
-
-/************* 600 px**********************/
-@media(max-width:600px){
-
-  #gamediv{
-    height: 200vh;
-    width: 50vh;
-  }
-}
-
-/************* 500 px**********************/
-@media(max-width:500px){
-
-  #gamediv{
-    height: 150vh;
-    width: 50vh;
-  }
-}
 
 /************* 400 px**********************/
-@media(max-width:400px){
 
-  #gamediv{
-    height: 100vh;
-    width: 25vh;
-  }
-
-  #main{
-    width: 30vh;
-    height: 100vh;
-  }
-
-  .temDivPara{
-    margin-left : 1rem;
-    margin-right: 0rem;
-    padding : 0rem;
-  }
-}
-
-/************* 360 px**********************/
-@media(max-width:360px){
-
-  #gamediv{
-    height: 150vh;
-    width: 30vh;
-  }
-
-}
-
-/************* 300 px**********************/
-@media(max-width:300px){
-
-  #gamediv{
-    height: 150vh;
-    width: 10vh;
-  }
-
+@media(max-width:400px) {
+    .temDivPara {
+        margin-left: 1rem;
+        margin-right: 0rem;
+        padding: 0rem;
+    }
 }
