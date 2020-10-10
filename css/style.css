@@ -14,13 +14,6 @@ body {
 }
 
 
-/************main centraldiv************/
-
-#centraldiv {
-    padding: 2rem;
-}
-
-
 /*******************  HEADER COLOR AND FONT  *********************/
 
 header {
@@ -205,10 +198,6 @@ header h4 {
 }
 
 @media(max-width:360px) {
-    /************main centraldiv************/
-    #centraldiv {
-        padding: 0.5rem 1rem;
-    }
     /*** HEADER COLOR AND FONT  ***********/
     header {
         height: 15vh;

@@ -1,78 +1,66 @@
 /*************  CSS RESET  ********************/
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
-  
-  
-  /********************   BODY  ***********************/
-  body{
-    background-color:#7fe18c;
+
+
+/********************   BODY  ***********************/
+
+body {
+    background-color: #7fe18c;
     font-family: 'Saira Stencil One', cursive;
-  }
-  /************DIVs************/
-  #centraldiv{
-    padding: 2rem;
-  }
+}
 
-
-  #main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  #infodiv{
-    padding-top: 2rem;
-  }
-  /*******************  HEADER COLOR AND FONT  *********************/
-  
-  header{
-    height: 18vh;
-    padding: 0rem 5rem;
-    display: grid;
-    grid-template-columns: 1fr 20px;
-    text-align: center;
+#header_div {
+    padding-top: 3rem;
     padding-bottom: 3rem;
-  }
-  
-  header a{
+    vertical-align: center;
+    text-align: center;
+    font-size: 32px;
+}
+
+#infodiv {
+    padding-top: 2rem;
+}
+
+
+/*******************  HEADER COLOR AND FONT  *********************/
+
+#header_div a {
     text-decoration: none;
     font-size: 66px;
     text-align: center;
     font-weight: bold;
-  }
+}
 
-  
-  header h4{
-  font-size: 50px;
-  color: #f0f400;
-  text-align: center;
+#header_div h4 {
+    font-size: 50px;
+    color: #f0f400;
+    text-align: center;
+}
 
-  }
-
-  #butClick{
+#butClick {
     width: 50px;
     height: 40px;
-  }
+}
 
-  #volNoSpan{
+#volNoSpan {
     display: none;
-  }
+}
 
-
-  #press{
+#press {
     font-size: 2rem;
     border: solid red;
     color: white;
-    background-color:black;
-  
-    
-  }
-  
-  /*******************  H1 COLOR AND FONT  *********************/
-  
-  
-  h1{
+    background-color: black;
+}
+
+
+/*******************  H1 COLOR AND FONT  *********************/
+
+h1 {
     font-size: 3rem;
     color: #000;
     text-align: Center;
@@ -81,96 +69,73 @@
     padding: 2rem;
     padding-left: 0rem;
     text-decoration: none;
-  
-  }
-  #name{
-      padding: 2rem;
-  }
-  #age{
-      padding: 2rem;
-  }
-  #botton{
+}
+
+#name {
+    padding: 2rem;
+}
+
+#age {
+    padding: 2rem;
+}
+
+#botton {
     padding: 2rem;
     padding-left: 20rem;
-  }
-  
-  /********************   IMG OF ANGRY BIRDS  ***********************/
-  
-  img{ 
-    width: 600px;
-    height: 400px;
-  }
-     
-  #textfield{
+}
+
+
+/********************   IMG OF ANGRY BIRDS  ***********************/
+
+img {
+    width: 30%;
+    height: auto;
+}
+
+#textfield {
     border-radius: 25px;
     font-size: 2rem;
     padding: 0rem 3rem;
-  }
-  #agefield{
-  border-radius: 25px;
-  font-size: 1.3rem;
-   padding: 0rem 2rem;
-  }
-  
-  /************RESPONSIVE DESIGN****************************/
-  @media(max-width:768px)
-{
-  /************DIVs************/
-  #main{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  /*******************  HEADER COLOR AND FONT  *********************/
-  
-  header{
-    padding: 0rem 1.5rem;
-    padding-bottom: 2rem;
-  }
-  
-  header a{
-    font-size: 60px;
-  }
-
-  
-  header h4{
-  font-size: 36px;
-  color: #fff0ff;
-  }
 }
-  /*********************************MOBILE VEIW**********/
 
-@media(max-width:360px){
-
-  /*******************  HEADER COLOR AND FONT  *********************/
-  
-  header{
-    padding: 0rem 1.5rem;
-    padding-bottom: 4rem;
-  }
-  
-  header a{
-    font-size: 40px;
-  }
-
-  
-  header h4{
-  font-size: 16px;
-  color: #fff0ff;
-  }
-
-  #main{
-    display: grid;
-    grid-template-columns: 0fr;
-  }
-
-  #infodiv{
-    grid-column: 1/span 1;
-  }
-
-  #playdiv{
-    grid-column: 1/span 1;
-  }
+#agefield {
+    border-radius: 25px;
+    font-size: 1.3rem;
+    padding: 0rem 2rem;
+}
 
 
+/************RESPONSIVE DESIGN****************************/
+
+@media(max-width:768px) {
+    /*******************  HEADER COLOR AND FONT  *********************/
+    header {
+        padding: 0rem 1.5rem;
+        padding-bottom: 2rem;
+    }
+    header a {
+        font-size: 60px;
+    }
+    header h4 {
+        font-size: 36px;
+        color: #fff0ff;
+    }
+}
+
+
+/*********************************MOBILE VEIW**********/
+
+@media(max-width:360px) {
+    /*******************  HEADER COLOR AND FONT  *********************/
+    header {
+        padding: 0rem 1.5rem;
+        padding-bottom: 4rem;
+    }
+    header a {
+        font-size: 40px;
+    }
+    header h4 {
+        font-size: 16px;
+        color: #fff0ff;
+    }
 }
