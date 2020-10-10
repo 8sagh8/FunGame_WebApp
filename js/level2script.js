@@ -37,8 +37,8 @@ let fourOption = document.querySelector("#optionFour");
 const randomQuestionNumbers = () => {
     /*****all containers****/
 
-    let valueO = Math.floor(Math.random() * 5 + 1);
-    let valueT = Math.floor(Math.random() * 6);
+    let valueO = Math.floor(Math.random() * 21) + 10;
+    let valueT = Math.floor(Math.random() * 11);
 
     while (valueT > valueO)
         valueT = valueO - 1;
@@ -56,7 +56,7 @@ const randomQuestionNumbers = () => {
     let randomNumArray = [];
 
     for (let i = 0; i < 3; i++) {
-        let valueLand = Math.floor(Math.random() * 5);
+        let valueLand = Math.floor(Math.random() * 12);
         randomNumArray.push(`${valueLand}`);
 
         console.log(randomNumArray[i]);
@@ -66,7 +66,7 @@ const randomQuestionNumbers = () => {
         /********compare index "0" with correct answer*********** */
         while (randomNumArray[0] == answerValue) {
             randomNumArray.pop();
-            let valueNewL = Math.floor(Math.random() * 5);
+            let valueNewL = Math.floor(Math.random() * 19);
             randomNumArray.push(`${valueNewL}`);
         }
         /*********compare all arrays num************************ */
@@ -78,7 +78,7 @@ const randomQuestionNumbers = () => {
                 console.log(`before pop ${randomNumArray[i]}`);
                 randomNumArray.pop();
                 console.log(`before pop ${randomNumArray[i]}`);
-                let valueNewL = Math.floor(Math.random() * 5);
+                let valueNewL = Math.floor(Math.random() * 28);
                 randomNumArray.push(`${valueNewL}`);
                 console.log(`after push ${randomNumArray[i]}`);
             }
@@ -92,12 +92,7 @@ const randomQuestionNumbers = () => {
     twoOption.innerHTML = randomNumArray[1];
     threeOption.innerHTML = randomNumArray[2];
     fourOption.innerHTML = answerValue;
-    /*fiveOption.innerHTML = randomNumArray[3];
-  sixOption.innerHTML = randomNumArray[4];
-  sevenOption.innerHTML = randomNumArray[5];
-  eightOption.innerHTML = randomNumArray[6];
-  nineOption.innerHTML = randomNumArray[7];
-*/
+
 
 }
 
@@ -107,12 +102,7 @@ oneOption.addEventListener("click", randomQuestionNumbers);
 twoOption.addEventListener("click", randomQuestionNumbers);
 threeOption.addEventListener("click", randomQuestionNumbers);
 fourOption.addEventListener("click", randomQuestionNumbers);
-/*  fiveOption.addEventListener("click", randomQuestionNumbers);
-  sixOption.addEventListener("click", randomQuestionNumbers);
-  sevenOption.addEventListener("click", randomQuestionNumbers);
-  eightOption.addEventListener("click", randomQuestionNumbers);
-  nineOption.addEventListener("click", randomQuestionNumbers);
-*/
+
 /************Click Calculation***************/
 let iClick = 0;
 let totalMiss = 0;
@@ -171,9 +161,3 @@ const missCalculation = () => {
 oneOption.addEventListener("click", missCalculation);
 twoOption.addEventListener("click", missCalculation);
 threeOption.addEventListener("click", missCalculation);
-/*fiveOption.addEventListener("click", missCalculation);
-sixOption.addEventListener("click", missCalculation);
-sevenOption.addEventListener("click", missCalculation);
-eightOption.addEventListener("click", missCalculation);
-nineOption.addEventListener("click", missCalculation);
-*/
