@@ -36,8 +36,8 @@ let fourOption = document.querySelector("#optionFour");
 const randomQuestionNumbers = () => {
     /*****all containers****/
 
-    let valueO = Math.floor(Math.random() * 6);
-    let valueT = Math.floor(Math.random() * 6);
+    let valueO = Math.floor(Math.random() * 20);
+    let valueT = Math.floor(Math.random() * 20);
 
     /******Calulations****/
     oneValue.innerHTML = valueO;
@@ -51,7 +51,7 @@ const randomQuestionNumbers = () => {
     let randomNumArray = [];
 
     for (let i = 0; i < 3; i++) {
-        let valueLand = Math.floor(Math.random() * 11);
+        let valueLand = Math.floor(Math.random() * 20);
         randomNumArray.push(`${valueLand}`);
 
         console.log(randomNumArray[i]);
@@ -61,7 +61,7 @@ const randomQuestionNumbers = () => {
         /********compare index "0" with correct answer*********** */
         while (randomNumArray[0] == answerValue) {
             randomNumArray.pop();
-            let valueNewL = Math.floor(Math.random() * 10);
+            let valueNewL = Math.floor(Math.random() * 20);
             randomNumArray.push(`${valueNewL}`);
         }
         /*********compare all arrays num************************ */
