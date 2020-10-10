@@ -87,12 +87,6 @@ const randomQuestionNumbers = () => {
     twoOption.innerHTML = randomNumArray[1];
     threeOption.innerHTML = randomNumArray[2];
     fourOption.innerHTML = answerValue;
-    /*fiveOption.innerHTML = randomNumArray[3];
-  sixOption.innerHTML = randomNumArray[4];
-  sevenOption.innerHTML = randomNumArray[5];
-  eightOption.innerHTML = randomNumArray[6];
-  nineOption.innerHTML = randomNumArray[7];
-*/
 }
 
 
@@ -102,14 +96,6 @@ oneOption.addEventListener("click", randomQuestionNumbers);
 twoOption.addEventListener("click", randomQuestionNumbers);
 threeOption.addEventListener("click", randomQuestionNumbers);
 fourOption.addEventListener("click", randomQuestionNumbers);
-/*  fiveOption.addEventListener("click", randomQuestionNumbers);
-  sixOption.addEventListener("click", randomQuestionNumbers);
-  sevenOption.addEventListener("click", randomQuestionNumbers);
-  eightOption.addEventListener("click", randomQuestionNumbers);
-  nineOption.addEventListener("click", randomQuestionNumbers);
-
- 
-*/
 
 
 /************Click Calculation***************/
@@ -171,10 +157,3 @@ const missCalculation = () => {
 oneOption.addEventListener("click", missCalculation);
 twoOption.addEventListener("click", missCalculation);
 threeOption.addEventListener("click", missCalculation);
-/*fiveOption.addEventListener("click", missCalculation);
-sixOption.addEventListener("click", missCalculation);
-sevenOption.addEventListener("click", missCalculation);
-eightOption.addEventListener("click", missCalculation);
-nineOption.addEventListener("click", missCalculation);
-
-*/
