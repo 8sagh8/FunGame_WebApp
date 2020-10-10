@@ -4,6 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Math Game</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -12,17 +23,14 @@
   <body>
     <div id="centraldiv">
       <header>
-        <span>
           <a href="index.html">Fun Num Game</a>
-          <h4>Click on level below to play</h4>
-        </span>  
 
   <i class="fab fa-airbnb fa-5x"></i>
       </header>
       
-      <main id="main">
-        <div id = "leveldiv">
-          <div id="sublevel1div">
+      <main id="main" class="row">
+        
+          <div id="sublevel1div" class="col-lg-4">
             <div id="bubble1div">
               <p class = "blue">LEVEL 1</p>
                <p class = "Pink">ADD</p>
@@ -32,7 +40,7 @@
             </div> 
           </div>
                     
-          <div id="sublevel2div">
+          <div id="sublevel2div" class="col-lg-4">
             <div id="bubble2div">
               <p class = "blue">LEVEL 2</p>
               <p class = "Pink">SUBSTRACT</p>          
@@ -42,7 +50,7 @@
             </div> 
           </div>
                     
-          <div id="sublevel3div">
+          <div id="sublevel3div" class="col-lg-4">
             <div id="bubble2div">
               <p class = "blue">LEVEL 3</p>
               <p class = "Pink">DIVISION</p>          
@@ -51,14 +59,21 @@
               <p class = "example">&nbsp;&nbsp; 8 / 2=4</p>
             </div> 
           </div>
-        </div>
         
-        <div id="startrule">
-          <a href="innerpages/info.html" class="start">Start</a>
+        
+        <!---->
+        <div class="row" id="startPicRule">
+          <div class="col-lg-4">
+            <a href="innerpages/info.html" id = "_start" ><h2>Start</h2></a>
+          </div>
 
-          <img src ="img/mainpage.jpg" id = "mainpage">
+          <div class="col-lg-4">
+            <img src ="img/mainpage.jpg" id = "mainpage" >
+          </div>
 
-          <a href="innerpages/rule.html" class="start">Rules</a>
+          <div class="col-lg-4">
+            <a href="innerpages/rule.html" id = "_rules" ><h2>Rules</h2></a>
+          </div>
         </div>
       </main>
     </div>

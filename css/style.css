@@ -121,36 +121,17 @@ header h4 {
 
 /****************   LEVEL DIV  **********************/
 
-#leveldiv {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 1rem 3rem 3rem 3rem;
-}
-
-#sublevel1div {
-    grid-column: 1/span 1;
-    padding: 0rem 0rem 2rem 2rem;
-}
-
-#sublevel2div {
-    grid-column: 2/span 1;
-    padding: 0rem 0rem 2rem 2rem;
-}
-
-#sublevel3div {
-    grid-column: 3/span 1;
-    padding: 0rem 0rem 2rem 2rem;
+#main {
+    vertical-align: center;
+    text-align: center;
 }
 
 
 /*******************START-RULE DIV*********************/
 
-#startrule {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 
-.start {
+/*
+#_start {
     color: #F70000;
     text-align: center;
     font-size: 3.5rem;
@@ -158,9 +139,23 @@ header h4 {
     text-decoration: none;
 }
 
+#_rules {
+    color: #F70000;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+*/
+
+#startPicRule {
+    margin-top: 200px;
+    vertical-align: center;
+    text-align: center;
+}
+
 #mainpage {
-    margin-left: 2rem;
-    width: 75%;
+    width: 200px;
 }
 
 
@@ -207,9 +202,6 @@ header h4 {
         margin-bottom: 1rem;
         padding: 0rem;
     }
-    #startrule {
-        padding-top: 5rem;
-    }
 }
 
 @media(max-width:360px) {
@@ -255,23 +247,5 @@ header h4 {
         grid-column: 1/span 1;
         margin-bottom: 1rem;
         padding: 0rem;
-    }
-    /*******************START-RULE DIV*********************/
-    #startrule {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        height: 10vh;
-        padding: 0rem;
-        margin: 0rem;
-    }
-    #start {
-        font-size: 3rem;
-    }
-    #mainpage {
-        margin-left: 0rem;
-        width: 100%;
-    }
-    #rules {
-        font-size: 3rem;
     }
 }
