@@ -1,7 +1,3 @@
-prompt("Name: " + localStorage.fullName + " Age: " + localStorage.fullAge);
-prompt("Scores: " + localStorage.fullScore + " Hits: " + localStorage.fullHits + " Misses: " +
-    localStorage.fullMisses);
-
 let loadReport = () => {
     document.querySelector("#pName").innerHTML = localStorage.fullName;
 
